@@ -15,8 +15,6 @@ with open('twilio/__init__.py') as f:
 # documentation: http://pypi.python.org/pypi/setuptools
 REQUIRES = ["requests >= 2.0.0", "six", "pytz", "PyJWT >= 1.4.2"]
 
-if sys.version_info < (2, 6):
-    REQUIRES.append('simplejson')
 if sys.version_info < (3, 0):
     REQUIRES.extend(["cryptography >= 1.3.4", "idna >= 2.0.0", "pyOpenSSL >= 0.14"])
 if sys.version_info >= (3, 0):
